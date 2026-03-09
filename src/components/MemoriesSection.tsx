@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
-import img1 from "@/assets/couple-story1.jpg";
-import img2 from "@/assets/couple-story2.jpg";
-import img3 from "@/assets/couple-story3.jpg";
-import img4 from "@/assets/couple-story4.jpg";
-import img5 from "@/assets/couple-story5.jpg";
-import heroImg from "@/assets/couple-hero.jpg";
+import img1 from "@/assets/1.jpeg";
+import img2 from "@/assets/2.jpeg";
+import img3 from "@/assets/3.jpeg";
+import img4 from "@/assets/4.jpeg";
+import img5 from "@/assets/5.jpeg";
+import heroImg from "@/assets/6.jpeg";
 
 const memories = [
   { src: img3, caption: "Our magical nights ✨" },
