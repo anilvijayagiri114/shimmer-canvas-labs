@@ -5,7 +5,16 @@ import img2 from "@/assets/2.jpeg";
 import img3 from "@/assets/3.jpeg";
 import img4 from "@/assets/4.jpeg";
 import img5 from "@/assets/5.jpeg";
-import heroImg from "@/assets/6.jpeg";
+import img6 from "@/assets/6.jpeg";
+import img7 from "@/assets/7.jpeg";
+import img8 from "@/assets/8.jpeg";
+import img9 from "@/assets/9.jpeg";
+import img10 from "@/assets/10.jpeg";
+import img11 from "@/assets/11.jpeg";
+import img12 from "@/assets/12.jpeg";
+import img13 from "@/assets/13.jpeg";
+import img14 from "@/assets/14.jpeg";
+import img15 from "@/assets/15.jpeg";
 
 const memories = [
   { src: img3, caption: "Our magical nights ✨" },
@@ -13,7 +22,16 @@ const memories = [
   { src: img2, caption: "Walking through life together 🍂" },
   { src: img4, caption: "Making memories at home 🏠" },
   { src: img5, caption: "Chasing sunsets with you 🌅" },
-  { src: heroImg, caption: "You & me, always 💕" },
+  { src: img6, caption: "You & me, always 💕" },
+   { src: img7, caption: "Our magical nights ✨" },
+  { src: img8, caption: "Coffee dates with you ☕" },
+  { src: img9, caption: "Walking through life together 🍂" },
+  { src: img10, caption: "Making memories at home 🏠" },
+  { src: img11, caption: "Chasing sunsets with you 🌅" },
+  { src: img12, caption: "You & me, always 💕" },
+   { src: img13, caption: "Making memories at home 🏠" },
+  { src: img14, caption: "Chasing sunsets with you 🌅" },
+  { src: img15, caption: "You & me, always 💕" },
 ];
 
 const MemoriesSection = () => {
