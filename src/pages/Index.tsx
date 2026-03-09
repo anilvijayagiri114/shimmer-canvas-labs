@@ -24,7 +24,9 @@ return (
           <MemoriesSection />
           <BirthdayCountdown />
           <BirthdayLetter />
-          <JourneyButton />
+          <div className="flex justify-center my-10">
+  <JourneyButton />
+</div>
           <BirthdayFooter />
         </>
       )}
