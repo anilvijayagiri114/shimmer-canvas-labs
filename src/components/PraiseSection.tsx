@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Star, Sparkles, Crown, Sun, Flower2,ShieldCheck,
   HandHeart,
-  BrainHeart } from "lucide-react";
+  Brain } from "lucide-react";
 import roseImg from "@/assets/heart-icon.png";
 
 const praises = [
