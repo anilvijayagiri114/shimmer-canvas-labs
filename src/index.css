@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,38 +6,38 @@
 
 @layer base {
   :root {
-    --background: 30 30% 97%;
-    --foreground: 20 20% 15%;
+    --background: 340 30% 97%;
+    --foreground: 340 25% 12%;
 
-    --card: 30 25% 95%;
-    --card-foreground: 20 20% 15%;
+    --card: 340 25% 95%;
+    --card-foreground: 340 25% 12%;
 
-    --popover: 30 30% 97%;
-    --popover-foreground: 20 20% 15%;
+    --popover: 340 30% 97%;
+    --popover-foreground: 340 25% 12%;
 
-    --primary: 350 60% 45%;
-    --primary-foreground: 30 30% 97%;
+    --primary: 340 65% 47%;
+    --primary-foreground: 340 30% 97%;
 
-    --secondary: 30 40% 90%;
-    --secondary-foreground: 20 20% 15%;
+    --secondary: 340 30% 90%;
+    --secondary-foreground: 340 25% 12%;
 
-    --muted: 30 20% 92%;
-    --muted-foreground: 20 10% 45%;
+    --muted: 340 15% 92%;
+    --muted-foreground: 340 10% 45%;
 
-    --accent: 25 70% 55%;
-    --accent-foreground: 30 30% 97%;
+    --accent: 42 75% 55%;
+    --accent-foreground: 340 30% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 20% 88%;
-    --input: 30 20% 88%;
-    --ring: 350 60% 45%;
+    --border: 340 20% 88%;
+    --input: 340 20% 88%;
+    --ring: 340 65% 47%;
 
     --radius: 0.75rem;
 
     --warm-glow: 35 80% 60%;
-    --rose-soft: 350 40% 75%;
+    --rose-soft: 340 40% 80%;
     --cream: 40 40% 95%;
     --gold: 42 75% 55%;
 
@@ -52,34 +52,25 @@
   }
 
   .dark {
-    --background: 20 15% 8%;
-    --foreground: 30 20% 90%;
-
-    --card: 20 15% 12%;
-    --card-foreground: 30 20% 90%;
-
-    --popover: 20 15% 8%;
-    --popover-foreground: 30 20% 90%;
-
-    --primary: 350 55% 55%;
-    --primary-foreground: 30 30% 97%;
-
-    --secondary: 20 15% 18%;
-    --secondary-foreground: 30 20% 90%;
-
-    --muted: 20 10% 18%;
-    --muted-foreground: 30 15% 60%;
-
-    --accent: 25 60% 50%;
-    --accent-foreground: 30 30% 97%;
-
+    --background: 340 15% 8%;
+    --foreground: 340 20% 90%;
+    --card: 340 15% 12%;
+    --card-foreground: 340 20% 90%;
+    --popover: 340 15% 8%;
+    --popover-foreground: 340 20% 90%;
+    --primary: 340 55% 55%;
+    --primary-foreground: 340 30% 97%;
+    --secondary: 340 15% 18%;
+    --secondary-foreground: 340 20% 90%;
+    --muted: 340 10% 18%;
+    --muted-foreground: 340 15% 60%;
+    --accent: 42 60% 50%;
+    --accent-foreground: 340 30% 97%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 20 10% 20%;
-    --input: 20 10% 20%;
-    --ring: 350 55% 55%;
-
+    --border: 340 10% 20%;
+    --input: 340 10% 20%;
+    --ring: 340 55% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -95,27 +86,46 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
     font-family: 'Lora', serif;
   }
-
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
   }
 }
 
+/* Confetti particles */
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.confetti-particle {
+  position: fixed;
+  top: -10px;
+  z-index: 100;
+  pointer-events: none;
+  animation: confetti-fall linear forwards;
+}
+
+/* Envelope animation */
+@keyframes envelope-open {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(180deg); }
+}
+
+@keyframes letter-rise {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-120%); }
+}
+
 /* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: hsl(var(--background));
-}
-
-::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.3);
-  border-radius: 3px;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--background)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--primary) / 0.3); border-radius: 3px; }
