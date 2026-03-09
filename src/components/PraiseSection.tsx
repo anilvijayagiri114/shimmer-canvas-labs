@@ -72,7 +72,7 @@ const praises = [
     color: "text-accent",
   },
   {
-    icon: BrainHeart,
+    icon: Brain,
     title: "Emotional",
     message:
       "Her emotional depth allows her to understand feelings deeply and connect in a way very few people can.",
