@@ -14,18 +14,18 @@ import img11 from "@/assets/111.jpeg";
 import img15 from "@/assets/15.jpeg";
 
 const memories = [
-  { src: img3, caption: "Our magical nights ✨" },
-  { src: img1, caption: "Coffee dates with you ☕" },
-  { src: img2, caption: "Walking through life together 🍂" },
-  { src: img4, caption: "Making memories at home 🏠" },
-  { src: img5, caption: "Chasing sunsets with you 🌅" },
-  { src: img6, caption: "You & me, always 💕" },
-   { src: img7, caption: "Our magical nights ✨" },
-  { src: img8, caption: "Coffee dates with you ☕" },
-  { src: img9, caption: "Walking through life together 🍂" },
-  { src: img10, caption: "Making memories at home 🏠" },
-  { src: img11, caption: "Chasing sunsets with you 🌅" },
-  { src: img15, caption: "You & me, always 💕" },
+  { src: img3, caption: "Her soft heart loves even the smallest souls 🐶" },
+  { src: img1, caption: "Grace in every tradition she wears 🌸" },
+  { src: img2, caption: "Elegance that never needs effort ✨" },
+  { src: img4, caption: "Some beauty feels timeless 💫" },
+  { src: img5, caption: "Calm, pure, and beautiful like devotion 🌸" },
+  { src: img6, caption: "Like a butterfly, she makes everything beautiful 🦋" },
+   { src: img7, caption: "Simple moments, perfect memories 🍰" },
+  { src: img8, caption: "Flowing with the calm of nature 🌊" },
+  { src: img9, caption: "Like the river, she moves with grace 💧" },
+  { src: img10, caption: "Effortlessly cool, naturally beautiful 🖤" },
+  { src: img11, caption: "Beauty in the most natural moments 🌿" },
+  { src: img15, caption: "She doesn’t follow style, she creates it ✨" },
 ];
 
 const MemoriesSection = () => {
@@ -47,7 +47,7 @@ const MemoriesSection = () => {
             className="text-lg sm:text-xl text-primary"
             style={{ fontFamily: "'Dancing Script', cursive" }}
           >
-            Every moment with you is a treasure, Raji
+            Every moment of you is a treasure, Raji
           </p>
         </motion.div>
 
