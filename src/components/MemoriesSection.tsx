@@ -11,9 +11,6 @@ import img8 from "@/assets/8.jpeg";
 import img9 from "@/assets/9.jpeg";
 import img10 from "@/assets/10.jpeg";
 import img11 from "@/assets/11.jpeg";
-import img12 from "@/assets/12.jpeg";
-import img13 from "@/assets/13.jpeg";
-import img14 from "@/assets/14.jpeg";
 import img15 from "@/assets/15.jpeg";
 
 const memories = [
@@ -28,9 +25,6 @@ const memories = [
   { src: img9, caption: "Walking through life together 🍂" },
   { src: img10, caption: "Making memories at home 🏠" },
   { src: img11, caption: "Chasing sunsets with you 🌅" },
-  { src: img12, caption: "You & me, always 💕" },
-   { src: img13, caption: "Making memories at home 🏠" },
-  { src: img14, caption: "Chasing sunsets with you 🌅" },
   { src: img15, caption: "You & me, always 💕" },
 ];
 
