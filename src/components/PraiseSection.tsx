@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Heart, Star, Sparkles, Crown, Sun, Flower2,ShieldCheck,
+import { Heart, Star, Sparkles, Crown, Sun, Flower2,ShieldCheck,Gem, Smile,
   HandHeart,
   Brain } from "lucide-react";
 import roseImg from "@/assets/heart-icon.png";
@@ -17,7 +17,13 @@ const praises = [
     message: "The way you care for everyone around you, your kindness, your patience — Raji, you have the most beautiful heart I've ever known. You make this world a better place just by being you.",
     color: "text-primary",
   },
-  
+  {
+    icon: Gem,
+    title: "You're One of a Kind",
+    message:
+      "Some people are special, some are rare, and then there is you — impossible to replace.",
+    color: "text-primary",
+  },
   {
     icon: Star,
     title: "You're My Favorite Person",
@@ -37,43 +43,50 @@ const praises = [
     color: "text-accent",
   },
   {
+    icon: Smile,
+    title: "Being With You Feels Peaceful",
+    message:
+      "Even silence feels comfortable when you are around. That is something very rare.",
+    color: "text-accent",
+  },
+  {
     icon: Crown,
-    title: "Beautiful",
+    title: "Your Beauty Feels Effortless",
     message:
       "Her beauty is both striking and serene, captivating everyone around her with an effortless grace.",
     color: "text-accent",
   },
   {
     icon: Heart,
-    title: "Cute",
+    title: "You're Adorably Cute",
     message:
       "Her cute expressions and gestures bring warmth and light to every moment shared.",
     color: "text-primary",
   },
   {
     icon: ShieldCheck,
-    title: "Honest",
+    title: "Your Honesty is Rare",
     message:
       "Her honesty shines through in everything she does, building trust and authenticity in relationships.",
     color: "text-accent",
   },
   {
     icon: HandHeart,
-    title: "Caring",
+    title: "You Care Like No One Else",
     message:
       "She cares deeply for those around her, often anticipating needs and offering support without hesitation.",
     color: "text-primary",
   },
   {
     icon: Sparkles,
-    title: "Childish",
+    title: "Your Childlike Joy is Special",
     message:
       "Her playful innocence brings joy, laughter, and unexpected happiness to even the simplest moments.",
     color: "text-accent",
   },
   {
     icon: Brain,
-    title: "Emotional",
+    title: "You Thoughts Feels Everything",
     message:
       "Her emotional depth allows her to understand feelings deeply and connect in a way very few people can.",
     color: "text-primary",
