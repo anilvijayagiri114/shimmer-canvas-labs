@@ -24,9 +24,11 @@ return (
           <MemoriesSection />
           <BirthdayCountdown />
           <BirthdayLetter />
-          <div className="flex justify-center my-10">
-  <JourneyButton />
+          <div style={{color:"white", fontSize:"30px"}}>
+  JOURNEY TEST
 </div>
+
+<JourneyButton />
           <BirthdayFooter />
         </>
       )}
