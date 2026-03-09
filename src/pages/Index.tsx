@@ -24,11 +24,6 @@ return (
           <MemoriesSection />
           <BirthdayCountdown />
           <BirthdayLetter />
-          <div style={{color:"white", fontSize:"30px"}}>
-  JOURNEY TEST
-</div>
-
-<JourneyButton />
           <BirthdayFooter />
         </>
       )}
