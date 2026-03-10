@@ -41,7 +41,7 @@ const MemoriesSection = () => {
         >
           <Heart className="h-6 w-6 text-primary fill-primary mx-auto mb-4" />
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Our Beautiful Moments
+            Your Beautiful Moments
           </h2>
           <p
             className="text-lg sm:text-xl text-primary"
