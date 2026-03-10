@@ -1,5 +1,7 @@
 // encryption.ts
 
+import CryptoJS from 'crypto-js';
+
 /**
  * Encrypts a plaintext string using AES encryption.
  * @param plaintext - The string to encrypt.
@@ -7,8 +9,7 @@
  * @returns The encrypted string.
  */
 function encrypt(plaintext: string, password: string): string {
-    // Encryption logic (placeholder)
-    return `encrypted(${plaintext})`;
+  return CryptoJS.AES.encrypt(plaintext, password).toString();
 }
 
 /**
@@ -18,8 +19,8 @@ function encrypt(plaintext: string, password: string): string {
  * @returns The decrypted string.
  */
 function decrypt(ciphertext: string, password: string): string {
-    // Decryption logic (placeholder)
-    return `decrypted(${ciphertext})`;
+  const bytes = CryptoJS.AES.decrypt(ciphertext, password);
+  return bytes.toString(CryptoJS.enc.Utf8);
 }
 
 export { encrypt, decrypt };
