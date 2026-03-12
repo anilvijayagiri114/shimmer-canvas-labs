@@ -7,17 +7,32 @@ const BirthdayCountdown = () => {
   const [isBirthday, setIsBirthday] = useState(false);
 
   useEffect(() => {
-    const birthday = new Date("2026-03-11T00:00:00");
+    const getNextBirthday = (now: Date) => {
+      // birthday is always March 11
+      const year = now.getFullYear();
+      let next = new Date(year, 2, 11, 0, 0, 0); // month index 2 = March
+      // if we've already passed March 11 this year, target next year
+      if (now > next) {
+        next = new Date(year + 1, 2, 11, 0, 0, 0);
+      }
+      return next;
+    };
 
     const update = () => {
       const now = new Date();
-      const diff = birthday.getTime() - now.getTime();
+      const nextBirthday = getNextBirthday(now);
 
-      if (diff <= 0) {
+      // determine if today *is* the birthday (ignore time)
+      const isTodayBirthday =
+        now.getMonth() === 2 && now.getDate() === 11;
+
+      if (isTodayBirthday) {
         setIsBirthday(true);
         return;
       }
 
+      setIsBirthday(false);
+      const diff = nextBirthday.getTime() - now.getTime();
       setTimeLeft({
         days: Math.floor(diff / (1000 * 60 * 60 * 24)),
         hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
@@ -67,7 +82,8 @@ const BirthdayCountdown = () => {
                 Counting Down to Your Day
               </h2>
               <p className="font-body text-muted-foreground mb-10 text-sm sm:text-base">
-                March 11, 2026 — the day the world got its most precious gift
+                {/* show the year of the upcoming birthday so it's dynamic */}
+                March 11, {new Date().getFullYear() + (new Date() > new Date(new Date().getFullYear(), 2, 11) ? 1 : 0)} — the day the world got its most precious gift
               </p>
 
               <div className="grid grid-cols-4 gap-3 sm:gap-6 max-w-md mx-auto">
